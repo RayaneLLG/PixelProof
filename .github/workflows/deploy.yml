@@ -22,7 +22,6 @@ steps:
 - name: Recuperer le code
 uses: actions/checkout@v4
 
-```
   - name: Installer Node.js
     uses: actions/setup-node@v4
     with:
@@ -41,7 +40,6 @@ uses: actions/checkout@v4
     uses: actions/upload-pages-artifact@v3
     with:
       path: ./dist
-```
 
 deploy:
 needs: build
