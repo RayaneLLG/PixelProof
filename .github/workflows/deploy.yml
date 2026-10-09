@@ -19,24 +19,24 @@ jobs:
 build:
 runs-on: ubuntu-latest
 steps:
-- name: Recuperer le code
+- name: Checkout code
 uses: actions/checkout@v4
 
-  - name: Installer Node.js
+  - name: Setup Node.js
     uses: actions/setup-node@v4
     with:
       node-version: 22
 
-  - name: Installer les dependances
+  - name: Install dependencies
     run: npm install
 
-  - name: Compiler le site
+  - name: Build site
     run: npm run build
 
-  - name: Configurer GitHub Pages
+  - name: Configure GitHub Pages
     uses: actions/configure-pages@v5
 
-  - name: Preparer les fichiers
+  - name: Upload site files
     uses: actions/upload-pages-artifact@v3
     with:
       path: ./dist
@@ -48,6 +48,6 @@ environment:
 name: github-pages
 url: ${{ steps.deployment.outputs.page_url }}
 steps:
-- name: Publier le site
+- name: Deploy to GitHub Pages
 id: deployment
 uses: actions/deploy-pages@v4
