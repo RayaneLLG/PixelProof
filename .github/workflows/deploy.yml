@@ -1,6 +1,6 @@
 name: Deploy PixelProof
 
-on:
+'on':
   push:
     branches:
       - principal
