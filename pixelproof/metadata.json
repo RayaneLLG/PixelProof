@@ -1,6 +1,0 @@
-{
-  "name": "PixelProof — Online Image Analysis Lab",
-  "description": "Inspect dimensions, extract color palettes, compare before-and-after differences, and optimize digital images directly in your browser.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
