@@ -1,0 +1,5 @@
+# Robots.txt for PixelProof Image Analysis Lab
+User-agent: *
+Allow: /
+
+Sitemap: https://ais-pre-6ehe6bdam2qff5vakskpsz-480517220741.europe-west3.run.app/sitemap.xml
